@@ -13,6 +13,11 @@ public class Application3 {
          * ---- 출력 결과 ---
          * 남자입니다.
          * */
-
+        char gender = 'M';
+        System.out.println(gender == 'M' ? "남자입니다" : gender == 'F' ? "여자입니다." : "null"); // 남자입니다.
+//        char gender1 = 'F';
+//        System.out.println(gender1 == 'M' ? "남자입니다" : gender1 == 'F' ? "여자입니다." : "null"); // 여자입니다.
+//        char gender2 = 'd';
+//        System.out.println(gender2 == 'M' ? "남자입니다" : gender2 == 'F' ? "여자입니다." : "null"); // null
     }
 }

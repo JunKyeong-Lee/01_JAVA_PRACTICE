@@ -13,6 +13,14 @@ public class Application2 {
          * ------ 출력 결과 --------
          * 청소년
          * */
+        int age1 = 19;
+        int age2 = 13;
+        int age3 = 14;
+        int age4 = 20;
 
+        System.out.println(age1 <= 13 ? "어린이" : age1 <= 19 ? "청소년" : "성인"); // 청소년
+//        System.out.println(age2 <= 13 ? "어린이" : age2 <= 19 ? "청소년" : "성인"); // 어린이
+//        System.out.println(age3 <= 13 ? "어린이" : age3 <= 19 ? "청소년" : "성인"); // 청소년
+//        System.out.println(age4 <= 13 ? "어린이" : age4 <= 19 ? "청소년" : "성인"); // 성인
     }
 }

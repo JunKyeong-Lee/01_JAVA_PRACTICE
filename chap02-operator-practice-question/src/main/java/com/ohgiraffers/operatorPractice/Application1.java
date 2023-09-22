@@ -14,6 +14,10 @@ public class Application1 {
          *
          * 홀수
          * */
+        int num = 9;
+        System.out.println(num % 2 == 0 ? "짝수" : "홀수"); // 짝수
 
+//        int num1 = 10;
+//        System.out.println(num1 % 2 == 0 ? "짝수" : "홀수"); // 홀수
     }
 }

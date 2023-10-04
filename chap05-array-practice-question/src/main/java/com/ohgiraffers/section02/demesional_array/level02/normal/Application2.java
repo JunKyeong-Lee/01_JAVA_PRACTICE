@@ -36,8 +36,46 @@ public class Application2 {
          * 김정희 대조영
          * 김유신 이사부
          */
-        
-        
-        // 내일 해결함
+
+        String[] students = new String[12];
+        students = new String[]{
+                "홍길동",
+                "이순신",
+                "유관순",
+                "윤봉길",
+                "장영실",
+                "임꺽정",
+                "장보고",
+                "이태백",
+                "김정희",
+                "대조영",
+                "김유신",
+                "이사부"
+        };
+
+        String[][] group1 = new String[3][2]; // 1분단
+        String[][] group2 = new String[3][2]; // 2분단
+        String[][][] groups = {group1, group2};
+
+        for (int i = 0; i < groups.length; i++) {
+            for (int j = 0; j < groups[i].length; j++) {
+                for (int k = 0; k < groups[i][j].length; k++) {
+                    groups[i][j][k] = new String(students[i * 6 + j * 2 + k]);
+                }
+            }
+        }
+
+        for (int i = 0; i < groups.length; i++) {
+            System.out.printf("== %d분단 ==\n", i + 1);
+            for (int j = 0; j < groups[i].length; j++) {
+                for (int k = 0; k < groups[i][j].length; k++) {
+                    System.out.print(groups[i][j][k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+
     }
 }
+

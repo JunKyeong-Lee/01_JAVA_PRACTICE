@@ -36,10 +36,10 @@ public class Application1 {
         Random random = new Random();
 
 
-        char[][] arr = new char[height][width];
+        char[][] arr = new char[width][height];
 
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < height; j++) {
                 arr[i][j] = (char) (random.nextInt(26) + 'A');
                 System.out.print(arr[i][j] + " ");
             }

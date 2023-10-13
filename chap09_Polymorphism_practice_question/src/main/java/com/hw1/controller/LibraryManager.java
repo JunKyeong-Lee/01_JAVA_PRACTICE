@@ -40,7 +40,7 @@ public class LibraryManager {
     public int rentBook(int index) {
         int result = 0;
         if (bList[index] instanceof AniBook) {
-            if (((AniBook) bList[index]).getAccessAge() >= 18) {
+            if (((AniBook) bList[index]).getAccessAge() > mem.getAge()) {
                 result = 1;
             }
         } else if (bList[index] instanceof CookBook) {
